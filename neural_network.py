@@ -19,3 +19,7 @@ class Activation_Softmax():
     def forward(self, inputs):
         e_z = np.exp(inputs - np.max(inputs))
         self.output = e_z / np.sum(e_z, axis=1, keepdims=True)
+
+
+if __name__ == '__main__':
+    pass
